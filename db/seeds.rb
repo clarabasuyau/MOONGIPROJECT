@@ -6,7 +6,6 @@ User.destroy_all
 user_1 = User.create!(email: 'clara@test.fr', password: '123456')
 puts "create User1"
 
-
 # Post.destroy_all
 # puts 'destroy all posts'
 
