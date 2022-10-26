@@ -9,26 +9,22 @@ puts "create User1"
 Coffee.destroy_all
 puts 'destroy all coffees'
 
-# Coffee_1 = Post.create!(
-#     title: Faker::Book.title,
-#     content: Faker::ChuckNorris.fact,
-#     url: Faker::Internet.url,
-#     user_id: User.first.id
+Coffee_1 = Coffee.create!(
+  name: "Pink Bourbon",
+  description: "C'est descendant d'une variétés de café bourbon, l'une le plus ancestrale. Le bourbon rose de Colombie est una arabica réputée pour sa délicatesse et sa finesse aromatique plutôt floral et fruité",
+  gramme: "250"
+)
+
+# Coffee_2 = Coffee.create!(
+#     name: Faker::Book.title,
+#     description: Faker::ChuckNorris.fact,
+#     gramme: Faker::Internet.url,
 #   )
 
-# Coffee_2 = Post.create!(
-#   title: Faker::Book.title,
-#   content: Faker::ChuckNorris.fact,
-#   url: Faker::Internet.url,
-#   user_id: User.last.id
-# )
+# Coffee_3 = Coffee.create!(
+#     name: Faker::Book.title,
+#     description: Faker::ChuckNorris.fact,
+#     gramme: Faker::Internet.url,
+#   )
 
-# Coffee_3 = Post.create!(
-#   title: Faker::Book.title,
-#   content: Faker::ChuckNorris.fact,
-#   url: Faker::Internet.url,
-#   user_id: User.last.id
-# )
-
-
-# puts "creating the seeds!"
+puts "creating the seeds!"
