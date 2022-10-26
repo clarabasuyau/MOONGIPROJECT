@@ -6,30 +6,29 @@ User.destroy_all
 user_1 = User.create!(email: 'clara@test.fr', password: '123456')
 puts "create User1"
 
-# Post.destroy_all
-# puts 'destroy all posts'
+Coffee.destroy_all
+puts 'destroy all coffees'
 
-# Post_1 = Post.create!(
+# Coffee_1 = Post.create!(
 #     title: Faker::Book.title,
 #     content: Faker::ChuckNorris.fact,
 #     url: Faker::Internet.url,
 #     user_id: User.first.id
 #   )
 
-# Post_2 = Post.create!(
+# Coffee_2 = Post.create!(
 #   title: Faker::Book.title,
 #   content: Faker::ChuckNorris.fact,
 #   url: Faker::Internet.url,
 #   user_id: User.last.id
 # )
 
-# Comment.destroy_all
-# puts 'destroy all comments'
-
-# Comment_1 = Comment.create!(
-#   content: Faker::Quotes::Shakespeare.hamlet_quote,
-#   user_id: User.first.id,
-#   post_id: Post.first.id
+# Coffee_3 = Post.create!(
+#   title: Faker::Book.title,
+#   content: Faker::ChuckNorris.fact,
+#   url: Faker::Internet.url,
+#   user_id: User.last.id
 # )
 
-# puts "creating the faker seeds!"
+
+# puts "creating the seeds!"
