@@ -15,16 +15,16 @@ Coffee_1 = Coffee.create!(
   gramme: "250"
 )
 
-# Coffee_2 = Coffee.create!(
-#     name: Faker::Book.title,
-#     description: Faker::ChuckNorris.fact,
-#     gramme: Faker::Internet.url,
-#   )
+Coffee_2 = Coffee.create!(
+    name: "Tabi",
+    description: "Est un café issu d'un croisement des variéts Timor et Bourbon, qui a d'excellents résultats en tasse, avec des notes gustatives très prononcées de chocolat et d'agrumes",
+    gramme: "250"
+  )
 
-# Coffee_3 = Coffee.create!(
-#     name: Faker::Book.title,
-#     description: Faker::ChuckNorris.fact,
-#     gramme: Faker::Internet.url,
-#   )
+Coffee_3 = Coffee.create!(
+    name: "Columbia",
+    description: "Comme son nom l'indique c'est une variété qui tire le meilleur du terroir colombien, elle offre une douceur et un équilibre propre au pays.",
+    gramme: "250",
+  )
 
 puts "creating the seeds!"
