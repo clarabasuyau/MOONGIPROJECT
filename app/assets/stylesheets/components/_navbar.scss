@@ -23,26 +23,12 @@
 
 .middle-nav {
   display: flex;
+  
+  a:hover {
+    color: #32965D;
+  }
 }
 
 .right-nav {
   display: flex;
 }
-
-// .nav-link {
-//   display: flex;
-//   justify-content: space-between;
-// }
-
-// .navbar-moongi {
-//   justify-content: space-between;
-//   background: white;
-// }
-
-// .navbar-lewagon .navbar-collapse {
-//   flex-grow: 0;
-// }
-
-// .navbar-lewagon .navbar-brand img {
-//   width: 40px;
-// }
