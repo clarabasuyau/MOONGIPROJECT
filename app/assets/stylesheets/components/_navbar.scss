@@ -12,18 +12,25 @@
   padding-left: 45px;
   padding-right: 45px;
   list-style: none;
+  font-size: 20px;
+
+  a {
+    padding: .5em 1em;
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover {
+    color: #32965D;
+  }
 }
 
-.main-nav a {
-  padding: .5em 1em;
-  display: block;
-  text-decoration: none;
-  color: black;
-}
+.main-nav
 
 .middle-nav {
   display: flex;
-  
+
   a:hover {
     color: #32965D;
   }
@@ -31,4 +38,8 @@
 
 .right-nav {
   display: flex;
+
+  a:hover {
+    color: #32965D;
+  }
 }

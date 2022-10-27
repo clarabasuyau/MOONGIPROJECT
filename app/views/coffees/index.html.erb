@@ -1,6 +1,7 @@
 <div class="container">
-  <h1> Nos cafés: </h1>
   <% @coffees.each do |coffee|%>
-    <%= link_to coffee.name, coffee_path(coffee) %>
+    <h2>
+      <%= link_to coffee.name, coffee_path(coffee) %>
+    </h2>
   <% end %>
 </div>
