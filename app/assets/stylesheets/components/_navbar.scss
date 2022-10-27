@@ -6,7 +6,25 @@
 }
 
 
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 45px;
+  padding-right: 45px;
+  list-style: none;
 
+}
+
+.main-nav a {
+  padding: .5em 1em;
+  display: block;
+  text-decoration: none;
+}
+
+// .nav-link {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
 // .navbar-moongi {
 //   justify-content: space-between;
