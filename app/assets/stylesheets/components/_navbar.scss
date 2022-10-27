@@ -12,13 +12,21 @@
   padding-left: 45px;
   padding-right: 45px;
   list-style: none;
-
 }
 
 .main-nav a {
   padding: .5em 1em;
   display: block;
   text-decoration: none;
+  color: black;
+}
+
+.middle-nav {
+  display: flex;
+}
+
+.right-nav {
+  display: flex;
 }
 
 // .nav-link {

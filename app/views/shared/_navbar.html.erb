@@ -5,36 +5,28 @@
     <% end %>
   </div>
 </div>
-<%# <nav class="navbar bg-light">
-  <div class="container">
-    <div class="nav-link">
-      <div>
-
-      </div>
-      <div>
-        <div>CAFES</div>
-        <div>NOUS</div>
-      </div>
-      <div>
-        <div>CONTACT</div>
-        <div>PANIER</div>
-      </div>
-    </div>
-  </div>
-</nav> %>
 <nav>
   <ul class="main-nav">
-    <li>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-    </li>
-    <li>
-      <a href="">Products</a>
-    </li>
-    <li>
-      <a href="">Our Team</a>
-    </li>
-    <li>
-      <a href="">Contact</a>
-    </li>
+    <div>
+      <li>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </li>
+    </div>
+    <div class= "middle-nav">
+      <li>
+        <%= link_to "NOS CAFÉS", coffees_path %>
+      </li>
+      <li>
+        <a href="">NOUS</a>
+      </li>
+    </div>
+    <div class="right-nav">
+      <li>
+        <a href="">CONTACT</a>
+      </li>
+      <li>
+        <a href=""><i class="fab fa-cart-shopping"></i></a>
+      </li>
+    </div>
   </ul>
 </nav>
