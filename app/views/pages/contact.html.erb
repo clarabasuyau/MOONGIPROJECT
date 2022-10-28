@@ -1,8 +1,8 @@
 <div class="container">
   <div class="main-container">
-    <div class="contact">
+    <div class="address">
       <h1>Où nous trouver ?</h1>
-      <p> 49bis rue de notre Dame de bon secours</p>
+      <p> 39bis rue de notre Dame de bon secours</p>
       <p>60200 Compiègne</p>
     </div>
     <div id='map' style='width: 400px; height: 300px;'>
@@ -13,30 +13,31 @@
           style: 'mapbox://styles/mapbox/streets-v11'
         });
       </script> %>
-      <script>
+      <%# <script>
         mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhcmFiYXN1eWF1IiwiYSI6ImNsOXNidjMzYjEwbXczb3A1eGt0cm50NW0ifQ.fl1cYGFu_erpV2LhBlNKQQ';
-      const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
-      style: 'mapbox://styles/mapbox/light-v9', // style URL
-      center: [-2.81361, 36.77271], // starting position [lng, lat]
-      zoom: 13 // starting zoom
-      });
+        const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
+        style: 'mapbox://styles/mapbox/light-v9', // style URL
+        // center: [-2.81361, 36.77271], // starting position [lng, lat]
+        // zoom: 13 // starting zoom
+        });
 
-      const layerList = document.getElementById('menu');
-      const inputs = layerList.getElementsByTagName('input');
-
-      for (const input of inputs) {
-      input.onclick = (layer) => {
-      const layerId = layer.target.id;
-      map.setStyle('mapbox://styles/mapbox/' + layerId);
-      };
-      }
-      </script>
+        for (const input of inputs) {
+        input.onclick = (layer) => {
+        const layerId = layer.target.id;
+        map.setStyle('mapbox://styles/mapbox/' + layerId);
+        };
+        }
+      </script> %>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d648.9464896392316!2d2.8159350292349057!3d49.41295329870912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7d69d50345f0d%3A0x855762baa10e59a!2s39%20Rue%20Notre%20Dame%20de%20Bon%20Secours%2C%2060200%20Compi%C3%A8gne!5e0!3m2!1sfr!2sfr!4v1666954968160!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
 </div>
 
-    <%# <div>
-      <img id="map" src='https://api.mapbox.com/[...]?access_token=pk.eyJ1IjoiY2xhcmFiYXN1eWF1IiwiYSI6ImNsOXNidjMzYjEwbXczb3A1eGt0cm50NW0ifQ.fl1cYGFu_erpV2LhBlNKQQ'>
-    </div> %>
+<div class="container">
+  <div class="contact">
+    <h1>Nous contacter:</h1>
+  </div>
+
+</div>
