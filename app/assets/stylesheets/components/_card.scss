@@ -2,6 +2,15 @@
   display: flex;
   justify-content: space-around;
   margin-top: 5%;
-}
 
-.card 
+  .card {
+    border-radius: 10px;
+  }
+
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
