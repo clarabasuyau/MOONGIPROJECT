@@ -5,9 +5,11 @@ class PagesController < ApplicationController
   end
 
   def contact
+    @message = Message.new
+    @user = current_user
   end
 
   def nous
   end
-  
+
 end

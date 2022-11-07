@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
   get 'nous', to: 'pages#nous'
   resources :coffees, only: [:index, :show]
+  resources :messages, only: [:new, :create]
 end
