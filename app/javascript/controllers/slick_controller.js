@@ -12,11 +12,5 @@ export default class extends Controller {
       centerMode: true,
       variableWidth: true
     });
-
-    this.element.ready(function(){
-      $('.your-class').slick({
-        setting-name: setting-value
-      });
-    });
   }
 }
