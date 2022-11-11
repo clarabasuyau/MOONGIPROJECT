@@ -32,6 +32,10 @@
 <div class="container">
   <div class="contact">
     <%= simple_form_for(@message) do |f| %>
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :mail %>
+    <%= f.input :object %>
     <%= f.input :text %>
     <%= f.submit "Envoyez" %>
     <% end %>
