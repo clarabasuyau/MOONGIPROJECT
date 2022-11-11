@@ -13,3 +13,18 @@
     height: 60vh;
   }
 }
+
+
+
+
+.carousel {
+  background: #FAFAFA;
+  height: 200px; /* set gallery height */
+}
+
+.carousel-cell {
+  width: 66%;
+  height: 100%; /* inherit height from gallery */
+  margin-right: 0;
+  border-radius: 0;
+}
