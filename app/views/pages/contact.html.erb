@@ -32,11 +32,11 @@
   <h1>Nous contacter:</h1>
   <div class="contact">
     <%= simple_form_for(@message) do |f| %>
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :mail %>
-    <%= f.input :object %>
-    <%= f.input :text %>
+    <%= f.input :first_name, label: 'Prénom' %>
+    <%= f.input :last_name, label: 'Nom' %>
+    <%= f.input :mail, label: 'Email' %>
+    <%= f.input :object, label: 'Objet' %>
+    <%= f.input :text, label: 'Message' %>
     <%= f.submit "Envoyez" %>
     <% end %>
   </div>
