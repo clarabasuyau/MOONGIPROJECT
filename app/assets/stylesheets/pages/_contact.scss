@@ -10,3 +10,19 @@
 .address {
   flex-grow: 1;
 }
+
+.envoi {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+input {
+  border-radius: 20px;
+  border: 1px solid;
+  padding: 8px 24px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
