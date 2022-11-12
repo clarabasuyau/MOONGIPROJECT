@@ -11,9 +11,29 @@
   flex-grow: 1;
 }
 
+.main-container2 {
+  margin-top: 50px;
+  display: flex;
+}
+
+.dessin {
+  width: 30%
+}
+
+.logo2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.contact {
+  flex-grow: 1;
+}
+
 .contact-us{
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .envoi {

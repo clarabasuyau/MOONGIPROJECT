@@ -29,19 +29,24 @@
 </div>
 
 <div class="container">
-  <div class="contact-us">
-    <h1>Nous contacter:</h1>
-  </div>
-  <div class="contact">
-    <%= simple_form_for(@message) do |f| %>
-    <%= f.input :first_name, label: 'Prénom' %>
-    <%= f.input :last_name, label: 'Nom' %>
-    <%= f.input :mail, label: 'Email' %>
-    <%= f.input :object, label: 'Objet' %>
-    <%= f.input :text, label: 'Message' %>
-    <div class="envoi">
-      <%= f.submit "Envoyez" %>
+  <div class="main-container2">
+    <div class="dessin">
+      <%= image_tag "moongi_dessin.png", width: "330px", class: "logo2" %>
     </div>
-    <% end %>
+    <div class="contact">
+      <div class="contact-us">
+        <h1>Nous contacter:</h1>
+      </div>
+      <%= simple_form_for(@message) do |f| %>
+      <%= f.input :first_name, label: 'Prénom' %>
+      <%= f.input :last_name, label: 'Nom' %>
+      <%= f.input :mail, label: 'Email' %>
+      <%= f.input :object, label: 'Objet' %>
+      <%= f.input :text, label: 'Message' %>
+      <div class="envoi">
+        <%= f.submit "Envoyez" %>
+      </div>
+      <% end %>
+    </div>
   </div>
 </div>
