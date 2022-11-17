@@ -41,37 +41,39 @@
 
 /* external css: flickity.css */
 
-* {
-  box-sizing: border-box;
-  }
+// * { box-sizing: border-box; }
 
-  body {
-  font-family: sans-serif;
-  }
+// body { font-family: sans-serif; }
 
-  .content {
-  min-height: 200px;
-  }
+// /* force scrollbar, not necessary, but may reduce gaps. Setting a max-height on .carousel also works */
+// html { overflow-y: scroll; }
 
-  .carousel {
+// .carousel {
+//   background: #EEE;
+// }
+
+// .carousel img {
+//   display: block;
+//   height: 400px;
+// }
+
+/* external css: flickity.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
   background: #EEE;
-  }
+}
 
-  .carousel-cell {
-  width: 66%;
-  height: 200px;
-  margin-right: 10px;
-  background: #8C8;
-  border-radius: 5px;
-  counter-increment: gallery-cell;
-  }
-
-  /* cell number */
-  .carousel-cell:before {
+.carousel img {
   display: block;
-  text-align: center;
-  content: counter(gallery-cell);
-  line-height: 200px;
-  font-size: 80px;
-  color: white;
+  height: 200px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel img {
+    height: 400px;
   }
+}
