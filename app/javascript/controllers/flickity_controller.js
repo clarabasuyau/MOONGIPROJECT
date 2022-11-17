@@ -1,7 +1,6 @@
 import { Controller } from "@hotwired/stimulus"
 import Flickity  from "flickity/js/index";
 
-
 // export default class extends Controller {
 //   connect() {
 //     new Flickity( this.element, {
@@ -16,7 +15,6 @@ import Flickity  from "flickity/js/index";
 //     });
 //   }
 // }
-
 
 // const initFlickity = () => {
 //   if (document.querySelector('.carousel-moongi')) {
