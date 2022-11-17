@@ -34,30 +34,7 @@
             //   }
             // }
 
-            /* external css: flickity.css */
-
-            // * { box-sizing: border-box; }
-
-            // body { font-family: sans-serif; }
-
-            // /* force scrollbar, not necessary, but may reduce gaps. Setting a max-height on .carousel also works */
-            // html { overflow-y: scroll; }
-
-            // .carousel {
-              //   background: #EEE;
-              // }
-
-              // .carousel img {
-                //   display: block;
-                //   height: 400px;
-                // }
  /* external css: flickity.css */
-
-.carousel2 {
-  background: #FAFAFA;
-  height: 200px; /* set gallery height */
-}
-
 * { box-sizing: border-box; }
 
 body { font-family: sans-serif; }
@@ -66,15 +43,16 @@ body { font-family: sans-serif; }
   background: #EEE;
 }
 
+.carousel-cell {
+  width: 100%; /* full width */
+  margin-right: 10px;
+}
 .carousel2 img {
   display: block;
   height: 60vh;
 }
 
-.carousel-cell {
-  width: 100%; /* full width */
-  margin-right: 10px;
-}
+
 .flickity-page-dots {
   display: none;
 }
