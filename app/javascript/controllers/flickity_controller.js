@@ -42,7 +42,7 @@ import Flickity from "flickity";
 window.addEventListener("load", function() {
 
 // Initialise Flickity
-var flkty = new Flickity(".carousel", {
+const flkty = new Flickity(".carousel", {
         //Flickity options
 });
 

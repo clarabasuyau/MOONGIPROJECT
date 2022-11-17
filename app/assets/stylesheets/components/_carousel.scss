@@ -1,18 +1,18 @@
-// .carousel-inner {
-//   height: 60vh;
-//   margin-top: 20px;
-//   margin-bottom: 30px;
+.carousel-inner {
+  height: 60vh;
+  margin-top: 20px;
+  margin-bottom: 30px;
 
-//   img {
-//     object-fit: cover;
-//     height: 60vh;
-//     width: 100%;
-//   }
+  img {
+    object-fit: cover;
+    height: 60vh;
+    width: 100%;
+  }
 
-//   .carousel-item {
-//     height: 60vh;
-//   }
-// }
+  .carousel-item {
+    height: 60vh;
+  }
+}
 
 // .carousel {
 //   background: #FAFAFA;
@@ -59,21 +59,24 @@
 
 /* external css: flickity.css */
 
-* { box-sizing: border-box; }
+// * { box-sizing: border-box; }
 
-body { font-family: sans-serif; }
+// body { font-family: sans-serif; }
 
-.carousel {
-  background: #EEE;
-}
+// .carousel {
+//   background: #EEE;
+// }
 
-.carousel img {
-  display: block;
-  height: 200px;
-}
+// .carousel img {
+//   display: block;
+//   height: 200px;
+// }
 
-@media screen and ( min-width: 768px ) {
-  .carousel img {
-    height: 400px;
-  }
-}
+
+// .carousel-cell {
+//       width: 100%; /* full width */
+//       margin-right: 10px;
+//       img {
+//         height: 100%;
+//       }
+//     }
