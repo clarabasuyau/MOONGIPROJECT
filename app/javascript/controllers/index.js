@@ -9,3 +9,4 @@ application.register("hello", HelloController)
 
 import FlickityController from "./flickity_controller"
 application.register("flickity", FlickityController)
+
