@@ -1,8 +1,19 @@
+h1, h2 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
 .funder {
   margin-top: 20px;
   display: flex;
 
   img {
     width: 300px;
+    margin-right: 50px;
+  }
+
+  p {
+    display: flex;
+    align-self: center;
   }
 }
