@@ -5,6 +5,10 @@
   margin-bottom: 3%;
 }
 
+.text_vert a {
+  color: #32965D !important;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -14,7 +18,7 @@
   font-size: 20px;
 
   a {
-    padding: .5em 1em;
+    padding: .5em .4em;
     display: block;
     text-decoration: none;
     color: black;
