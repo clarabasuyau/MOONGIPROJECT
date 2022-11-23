@@ -39,18 +39,40 @@
 
 body { font-family: sans-serif; }
 
-.carousel2 {
-  background: #EEE;
+
+
+// .container.custom-flickity {
+//   height: 400px;
+//   .main-carousel {
+//     height: 100%;
+//     .flickity-slider {
+//       display: flex;
+//     }
+//   }
+// }
+
+.main-carousel .carousel-cell {
+  height: 400px;
+  margin-right: 0;
+  img {
+    height: 100%;
+  }
 }
 
-.carousel-cell {
-  width: 100%; /* full width */
-  margin-right: 10px;
-}
-.carousel2 img {
+.carousel-image {
   display: block;
-  height: 60vh;
+  height: 300px;
+  /* set min-width, allow images to set cell width */
+  min-width: 150px;
+  max-width: 100%;
+  margin-right: 10px;
+  /* vertically center */
+  top: 50%;
+  transform: translateY(-50%)
 }
+
+
+
 
 
 .flickity-page-dots {
