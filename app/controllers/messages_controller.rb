@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
   skip_before_action :authenticate_user!
+  invisible_captcha only: :create, on_spam: :redirect_home
 
   def new
     @message = Message.new
@@ -21,5 +22,9 @@ class MessagesController < ApplicationController
 
   def message_params
     params.require(:message).permit(:text, :mail, :first_name, :last_name, :object)
+  end
+
+  def redirect_home
+    redirect_to root_path
   end
 end

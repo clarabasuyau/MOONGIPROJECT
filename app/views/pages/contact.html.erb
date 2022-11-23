@@ -34,6 +34,7 @@
       <%= f.input :mail, label: 'Email' %>
       <%= f.input :object, label: 'Objet' %>
       <%= f.input :text, label: 'Message' %>
+      <%= invisible_captcha %>
       <div class="envoi">
         <%= f.submit "Envoyez" %>
       </div>
