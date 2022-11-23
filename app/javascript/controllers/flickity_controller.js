@@ -4,8 +4,9 @@ import Flickity from "flickity";
 export default class extends Controller {
   connect() {
     new Flickity( this.element, {
-      imagesLoaded: true,
-      autoPlay: 1000,
-    });
+      autoPlay: true,
+      wrapAround: true,
+      draggable: false,
+      cellAlign: 'left'
   }
 }

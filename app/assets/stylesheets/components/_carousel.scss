@@ -1,83 +1,3 @@
-.carousel-inner {
-  height: 60vh;
-  margin-top: 20px;
-  margin-bottom: 30px;
-
-  img {
-    object-fit: cover;
-    height: 60vh;
-    width: 100%;
-  }
-
-  .carousel-item {
-    height: 60vh;
-  }
-}
-
-// .flickity-enabled {
-  //   margin: 0;
-  //   .carousel-cell {
-    //     width: 100%; /* full width */
-    //     margin-right: 10px;
-    //     img {
-      //       height: 100%;
-      //     }
-      //   }
-      //   .flickity-button {
-        //     background: transparent;
-        //     &:hover {
-          //       background: transparent;
-          //     }
-          //     &:focus {
-            //       box-shadow: none;
-            //     }
-            //   }
-            // }
-
- /* external css: flickity.css */
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-
-
-// .container.custom-flickity {
-//   height: 400px;
-//   .main-carousel {
-//     height: 100%;
-//     .flickity-slider {
-//       display: flex;
-//     }
-//   }
-// }
-
-.main-carousel .carousel-cell {
-  height: 400px;
-  margin-right: 0;
-  img {
-    height: 100%;
-  }
-}
-
-.carousel-image {
-  display: block;
-  height: 300px;
-  /* set min-width, allow images to set cell width */
-  min-width: 150px;
-  max-width: 100%;
-  margin-right: 10px;
-  /* vertically center */
-  top: 50%;
-  transform: translateY(-50%)
-}
-
-
-
-
-
-.flickity-page-dots {
-  display: none;
-}
 /*! Flickity v2.3.0
 https://flickity.metafizzy.co
 ---------------------------------------------- */
@@ -125,7 +45,7 @@ https://flickity.metafizzy.co
 
 .flickity-button {
   position: absolute;
-  background: white;
+  background: hsla(0, 0%, 100%, 0.75);
   border: none;
   color: #333;
 }
@@ -214,4 +134,48 @@ https://flickity.metafizzy.co
 
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
+}
+
+// CUSTOM FLICKITY
+
+
+
+.main-carousel * {
+  box-sizing: border-box;
+}
+
+.flickity-slider {
+  display: flex;
+}
+
+.main-carousel .carousel-cell {
+
+  width: 400px;
+  height: 200px;
+  margin-right: 0;
+  // background: #8C8;
+  // counter-increment: gallery-cell;
+  transform: translateX(0) !important;
+}
+.carousel-image {
+  height: 100%;
+}
+
+.container.custom-flickity {
+  padding: 0;
+  max-width: 100% !important;
+}
+
+// /* cell number */
+// .main-carousel .carousel-cell:before {
+//   display: block;
+//   text-align: center;
+//   content: counter(gallery-cell);
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
+
+.flickity-button, .flickity-page-dots {
+  display: none;
 }
