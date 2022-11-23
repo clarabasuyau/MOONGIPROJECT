@@ -9,6 +9,7 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     # @message.user = current_user
     if @message.save
+      MessageMailer.with(message: @message).new_message_email.deliver_now
       flash.alert = "Votre message a été envoyé!"
       redirect_to contact_path
     else
