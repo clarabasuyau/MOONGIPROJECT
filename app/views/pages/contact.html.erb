@@ -27,8 +27,10 @@
         <h1>Nous contacter:</h1>
       </div>
       <%= simple_form_for(@message) do |f| %>
-      <%= f.input :first_name, label: 'Prénom' %>
-      <%= f.input :last_name, label: 'Nom' %>
+      <div class="form_name">
+        <%= f.input :first_name, label: 'Prénom' %>
+        <%= f.input :last_name, label: 'Nom' %>
+      </div>
       <%= f.input :mail, label: 'Email' %>
       <%= f.input :object, label: 'Objet' %>
       <%= f.input :text, label: 'Message' %>

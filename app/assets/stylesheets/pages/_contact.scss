@@ -24,7 +24,6 @@
 .logo2 {
   display: flex;
   justify-content: center;
-  margin-top: 10%;
   margin-bottom: 3%;
 }
 
@@ -35,6 +34,15 @@
 .contact-us{
   margin-top: 30px;
   margin-bottom: 30px;
+}
+
+.form_name {
+  display: flex;
+  justify-content: space-between;
+
+  .message_first_name, .message_last_name {
+    width: 49%;
+  }
 }
 
 .envoi {
