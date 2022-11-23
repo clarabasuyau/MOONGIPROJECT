@@ -13,15 +13,15 @@
       </li>
     </div>
     <div class= "middle-nav">
-      <li>
-        <%= link_to "NOS CAFÉS", coffees_path %>
+      <li class="<%= 'text_vert' if action_name == 'index' && controller_name == 'coffees' %>">
+        <%= link_to "CAFÉS", coffees_path %>
       </li>
-      <li>
+      <li class="<%= 'text_vert' if action_name == 'nous' %>">
         <%= link_to "NOUS", nous_path %>
       </li>
     </div>
     <div class="right-nav">
-      <li>
+      <li class="<%= 'text_vert' if action_name == 'contact' %>">
         <%= link_to "CONTACT", contact_path %>
       </li>
       <%# <li>
