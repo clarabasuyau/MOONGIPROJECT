@@ -6,12 +6,10 @@
 // External libraries
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome";
-@import "flickity/css/flickity";
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-// @import "flickity/css/flickity";
 
 .wrapper {
   // hauteur de l'écran - (hauteur navbar - hauteur footer)
