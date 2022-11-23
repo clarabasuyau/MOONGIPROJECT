@@ -2,11 +2,16 @@ import { Controller } from "@hotwired/stimulus"
 import Flickity from "flickity";
 
 export default class extends Controller {
+  static targets = [
+    "cell"
+  ]
   connect() {
-    new Flickity( this.element, {
-      autoPlay: true,
+    this.carousel = new Flickity( this.element, {
+      freeScroll: true,
       wrapAround: true,
-      draggable: false,
-      cellAlign: 'left'
+      // draggable: true,
+      autoPlay: true
+    })
+    this.carousel.select(4, true, true)
   }
 }
