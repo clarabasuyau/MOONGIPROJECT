@@ -11,19 +11,8 @@
         <p>06 64 53 79 31</p> %>
       </div>
     </div>
-    <div id='map' style='width: 600px; height: 500px;'>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiY2xhcmFiYXN1eWF1IiwiYSI6ImNsOXNidjMzYjEwbXczb3A1eGt0cm50NW0ifQ.fl1cYGFu_erpV2LhBlNKQQ';
-        const map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/light-v9',
-          center: [2.81635, 49.41294],
-          zoom: 13
-        });
-        const marker1 = new mapboxgl.Marker({ color: 'black'})
-          .setLngLat([2.81635, 49.41294])
-          .addTo(map);
-      </script>
+    <div id='map' data-controller="map" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY']%>" style='width: 600px; height: 500px;'>
+
     </div>
   </div>
 </div>
@@ -38,8 +27,10 @@
         <h1>Nous contacter:</h1>
       </div>
       <%= simple_form_for(@message) do |f| %>
-      <%= f.input :first_name, label: 'Prénom' %>
-      <%= f.input :last_name, label: 'Nom' %>
+      <div class="form_name">
+        <%= f.input :first_name, label: 'Prénom' %>
+        <%= f.input :last_name, label: 'Nom' %>
+      </div>
       <%= f.input :mail, label: 'Email' %>
       <%= f.input :object, label: 'Objet' %>
       <%= f.input :text, label: 'Message' %>
