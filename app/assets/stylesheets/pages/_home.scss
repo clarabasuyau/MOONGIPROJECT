@@ -13,23 +13,10 @@
   li {
     margin-top: 15px;
   }
-}
 
-
-/* external css: flickity.css */
-
-* { box-sizing: border-box; }
-
-body { font-family: sans-serif; }
-
-/* force scrollbar, not necessary, but may reduce gaps. Setting a max-height on .carousel also works */
-html { overflow-y: scroll; }
-
-.carousel2 {
-  background: #EEE;
-}
-
-.carousel2 img {
-  display: block;
-  height: 400px;
+  h3 {
+    font-family: 'Moongi';
+    font-size: 35px;
+    margin-top: 2em;
+  }
 }
